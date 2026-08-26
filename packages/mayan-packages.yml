@@ -1,0 +1,56 @@
+generated: '2026-08-26'
+method: searched
+source: >-
+  https://api.github.com/orgs/mayanco/repos, registry.npmjs.org, pypi.org — searched 2026-08-26
+package_count: 0
+packages: []
+note: >-
+  Mayan publishes NO first-party client libraries, and none are possible: it ships no public API.
+  The GitHub organization https://github.com/mayanco holds 4 public repositories, and the three
+  library-shaped ones are FORKS of third-party open source, not Mayan packages — their package.json
+  files name @scaleleap/amazon-advertising-api-sdk, @scaleleap/selling-partner-api-sdk and
+  @scaleleap/amazon-marketplaces, authored by Roman Filippov of scaleleap.com. They are clients for
+  AMAZON's Advertising and Selling Partner APIs, which Mayan consumes. The fourth,
+  mayanco/mayan-qa-sample, is an unpublished internal sample (package name "mayan-qa-sample",
+  version 1.0.0, never published to npm — registry.npmjs.org returns 404). No @mayan / @mayanco npm
+  scope exists (404), and no Mayan package exists on PyPI. Because there is no first-party SDK for a
+  Mayan API, NO `SDKs` pointer is wired into apis.yml — doing so would credit Mayan with client
+  libraries for an API it does not publish.
+searched_registries:
+- registry: npm
+  queries:
+  - '@mayanco/amazon-advertising-api-sdk'
+  - '@mayan/amazon-advertising-api-sdk'
+  - '@mayanco/selling-partner-api-sdk'
+  - '@mayanco/amazon-marketplaces'
+  - mayan-qa-sample
+  result: all 404 (no Mayan-scoped package published)
+- registry: pypi
+  queries:
+  - mayan-api_client
+  result: 404 on registry lookup; unrelated to this company in any case
+forks_not_mayan_packages:
+- repo: https://github.com/mayanco/amazon-advertising-api-sdk
+  upstream_package: '@scaleleap/amazon-advertising-api-sdk'
+  version: 3.1.18
+  published: null
+  official: false
+  note: Fork of Scale Leap's unofficial Amazon Advertising API SDK; last repo update 2021-07-29.
+- repo: https://github.com/mayanco/selling-partner-api-sdk
+  upstream_package: '@scaleleap/selling-partner-api-sdk'
+  version: null
+  published: null
+  official: false
+  note: Fork of Scale Leap's Amazon Selling Partner API SDK; last repo update 2021-06-22.
+- repo: https://github.com/mayanco/amazon-marketplaces
+  upstream_package: '@scaleleap/amazon-marketplaces'
+  version: null
+  published: null
+  official: false
+  note: Fork of Scale Leap's Amazon marketplace data objects; last repo update 2021-06-22.
+- repo: https://github.com/mayanco/mayan-qa-sample
+  upstream_package: null
+  version: 1.0.0
+  published: null
+  official: true
+  note: First-party but unpublished internal QA sample; not a client library. Last update 2022-07-15.

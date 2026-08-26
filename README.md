@@ -64,5 +64,27 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Mayan is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Mayan is a growth-automation platform for Amazon sellers, founded in 2020 in Las Vegas, Nevada
+(Y Combinator W21). It pairs Amazon advertising optimization with inventory intelligence —
+automated Sponsored Products campaign creation, keyword and category targeting, competitor product
+targeting, placement adjustments, search expansion, pricing optimization, profit dashboards and
+replenishment alerts — sold self-serve as Copilot Lite (free) and the Smart Ads Platform, and as
+expert-managed Gold, Diamond and Enterprise engagements. Mayan is an official Amazon Ads partner.
+
+- Website: https://www.mayan.co/
+- Application: https://app.mayan.co/signin
+- Pricing: https://www.mayan.co/pricing
+- Status: https://status.mayan.co/
+- GitHub: https://github.com/mayanco
+
+## API surface
+
+**Mayan publishes no public API.** As of 2026-08-26 there is no developer portal, API reference,
+OpenAPI/AsyncAPI/GraphQL contract, SDK, MCP server or agent card on any Mayan host. `api.mayan.co`,
+`docs.mayan.co`, `developer.mayan.co` and `developers.mayan.co` do not resolve in DNS, and every
+`/.well-known/*`, `/openapi.json`, `/swagger.json`, `/api-docs`, `/graphql` and `/llms.txt` probe on
+`www.mayan.co` and `app.mayan.co` returned 404. Mayan is an API *consumer*: it integrates Amazon's
+Selling Partner API and Amazon Advertising API on behalf of its customers.
+
+What this profile does record is the public operational and commercial surface — pricing tiers,
+status page and its Statuspage API, domain security posture, and the `/.well-known/` probe log.

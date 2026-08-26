@@ -1,0 +1,49 @@
+generated: '2026-08-26'
+method: probed
+source: https://status.mayan.co/ + https://status.mayan.co/api/v2/summary.json (fetched 2026-08-26, HTTP 200)
+status_page:
+  url: https://status.mayan.co/
+  vendor: Atlassian Statuspage
+  page_id: hj5fdc113gfg
+  public_api:
+    base: https://status.mayan.co/api/v2/
+    endpoints:
+    - https://status.mayan.co/api/v2/status.json
+    - https://status.mayan.co/api/v2/summary.json
+    - https://status.mayan.co/api/v2/components.json
+    note: >-
+      Statuspage's standard public REST API, served on Mayan's subdomain. The contract belongs to
+      Atlassian, not Mayan, so it is recorded here as an operational signal only and is NOT
+      registered as a Mayan API.
+  component_count: 59
+  observed_status: All Systems Operational (indicator "none", 2026-08-26)
+  components_of_note:
+  - name: Web Application
+    description: Web application where our customers manage their e-commerce business
+  - name: Eventis
+    description: Backend Event Sourced API services
+  - name: Surface (event source Deprecated OOS)
+    description: Backend service for automations and data ingestion — marked Deprecated / out of service on the status page
+  - name: Automations and Data Ingestion
+  - name: Automated Bidding Agent
+  - name: Machine Learning Models
+    description: Keyword, Category Targeting, Product Targeting and Inventory Forecasting models
+  - name: Decommissioned Automation Services
+versioning:
+  scheme: null
+  policy_url: null
+  note: No public API, therefore no published versioning scheme.
+deprecation:
+  policy_url: null
+  sunset_header: null
+  deprecation_header: null
+  note: >-
+    No published deprecation policy. The status page does show retired internals — a component named
+    "Surface (event source Deprecated OOS)" and another named "Decommissioned Automation Services" —
+    but these are internal service names on an operational dashboard, not a customer-facing
+    deprecation policy, so no Deprecation pointer is wired.
+sla:
+  url: null
+  uptime_commitment: null
+  note: No published SLA or uptime commitment found on mayan.co or the status page.
+deprecated_operations: []

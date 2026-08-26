@@ -1,0 +1,94 @@
+generated: '2026-08-26'
+method: probed
+source: live GET probes of /.well-known/* on every Mayan host (www.mayan.co, app.mayan.co, status.mayan.co)
+note: >-
+  Every /.well-known/ path on Mayan's own hosts (www.mayan.co, app.mayan.co) returned 404.
+  www.mayan.co is a Webflow site and answers "Invalid .well-known request" for the whole path
+  space; app.mayan.co is a credentialed Next.js application that returns its 404 shell.
+  The ONLY 200 in the sweep is /.well-known/security.txt on status.mayan.co — and that file is
+  NOT Mayan's: status.mayan.co is an Atlassian Statuspage tenant and the document is Atlassian's
+  own PGP-signed security.txt (Contact security@atlassian.com, Canonical
+  https://www.atlassian.com/.well-known/security.txt). It describes Atlassian's vulnerability
+  disclosure program, not Mayan's. It is saved verbatim for the record, but NO WellKnown and NO
+  SecurityTxt pointer is wired into apis.yml, because neither surface is served by Mayan.
+hosts:
+- host: www.mayan.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: app.mayan.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: status.mayan.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: well-known/mayan-status-security.txt
+    owner: Atlassian Statuspage (vendor-served; Canonical https://www.atlassian.com/.well-known/security.txt)
+    counts_for_mayan: false
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null

@@ -1,17 +1,31 @@
 aid: mayan
 name: Mayan
-description: 'Mayan is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Mayan is a Las Vegas, Nevada growth-automation platform for Amazon sellers,
+  founded in 2020 and a Y Combinator W21 company. Its software pairs advertising optimization
+  with inventory intelligence: automated Sponsored Products campaign creation, keyword and
+  category targeting, competitor product targeting, placement adjustments, search expansion,
+  pricing optimization, profit dashboards and replenishment alerts. It is sold self-serve as
+  Copilot Lite (free) and the Smart Ads Platform, and as expert-managed Gold, Diamond and
+  Enterprise engagements. Mayan is an official Amazon Ads partner and consumes Amazon''s
+  Selling Partner and Advertising APIs; as of this profile it publishes no public API,
+  developer portal, or machine-readable contract of its own.'
+image: https://cdn.prod.website-files.com/63ea8205733cc93bcb2836e5/6407877bdecd95d7099abb69_mayan-256x256.png
 url: https://raw.githubusercontent.com/api-evangelist/mayan/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-25'
-modified: '2026-08-25'
+modified: '2026-08-26'
 tags:
 - Company
+- Amazon
+- E-Commerce
+- Advertising
+- Retail Media
+- Marketing Automation
+- Inventory Management
+- Analytics
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +33,64 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mayan-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.mayan.co/
+- type: Pricing
+  url: https://www.mayan.co/pricing
+- type: SignUp
+  url: https://app.mayan.co/signup
+- type: Login
+  url: https://app.mayan.co/signin
+- type: TermsOfService
+  url: https://www.mayan.co/tos
+- type: PrivacyPolicy
+  url: https://www.mayan.co/privacy-policy
+- type: Support
+  url: https://www.mayan.co/contact
+- type: Blog
+  url: https://www.mayan.co/blog-category/updates
+- type: GitHubOrganization
+  url: https://github.com/mayanco
+- type: StatusPage
+  url: https://status.mayan.co/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/trymayan
+- type: YouTube
+  url: https://www.youtube.com/channel/UCps7NamcWMEU5IxwJ5vvx1Q
+- type: Plans
+  url: plans/mayan-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/mayan-rate-limits.yml
+- type: Lifecycle
+  url: lifecycle/mayan-lifecycle.yml
+- type: LLMsTxt
+  url: llms/mayan-llms.txt
+- type: Packages
+  url: packages/mayan-packages.yml
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 7
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Mayan ships an Amazon-seller SaaS as an end-user web app only — its own sitemap enumerates
+    marketing, pricing, blog, case-study and legal pages with no developer section, api.mayan.co and
+    docs.mayan.co do not resolve in DNS, and every spec and /.well-known probe on www.mayan.co and
+    app.mayan.co returned 404.
+  evidence:
+  - url: https://www.mayan.co/sitemap.xml
+    status: 200
+  - url: https://www.mayan.co/openapi.json
+    status: 404
+  - url: https://www.mayan.co/.well-known/api-catalog
+    status: 404
+  - url: https://app.mayan.co/openapi.json
+    status: 404
+  - url: https://www.mayan.co/llms.txt
+    status: 404
+  checked: '2026-08-26'

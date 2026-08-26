@@ -1,0 +1,12 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.mayan.co/ (site sweep 2026-08-26; sitemap.xml enumerated, no developer/API section exists)
+limit_count: 0
+rate_limits: []
+note: >-
+  No published rate limits, because Mayan publishes no public API. The full sitemap
+  (https://www.mayan.co/sitemap.xml, HTTP 200) contains marketing, pricing, blog, case-study and
+  legal pages only — no developer portal, no API reference, no documentation host. api.mayan.co,
+  docs.mayan.co, developer.mayan.co and developers.mayan.co do not resolve in DNS. The only
+  rate-limited surface reachable on a Mayan hostname is the Atlassian Statuspage REST API at
+  https://status.mayan.co/api/v2/*, which is Atlassian's service and Atlassian's limits, not Mayan's.

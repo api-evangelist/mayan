@@ -1,0 +1,85 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.mayan.co/pricing
+note: >-
+  Mayan prices its SELLER-FACING SaaS product, not an API. There is no developer/API pricing tier,
+  no metered API pricing and no published quota, because Mayan publishes no public API. Figures below
+  are quoted verbatim from the pricing page as fetched 2026-08-26 (HTTP 200).
+currency: USD
+plan_count: 5
+plans:
+- name: Copilot Lite
+  category: self-serve
+  price: 0
+  price_display: Free
+  currency: USD
+  billing_period: month
+  includes:
+  - Profit dashboard
+  - Inventory optimization
+  - Inventory replenishment alerts
+  - Smart alerts
+  quota: null
+  overage: null
+- name: Smart Ads Platform
+  category: self-serve
+  price: 199
+  price_display: $199/monthly
+  currency: USD
+  billing_period: month
+  includes:
+  - Everything in Copilot Lite
+  - Inventory-informed ads automation
+  - Automated full-campaign creation
+  - Targeting optimization
+  - Keyword generator
+  - Category targeting
+  - Competitor product targeting
+  - Placement adjustments
+  - Search expansion
+  - Ad pausing and enabling
+  quota: null
+  overage: null
+- name: Gold
+  category: expert-managed
+  price: 1000
+  price_display: $1000 + 3% ad spend/per month
+  currency: USD
+  billing_period: month
+  usage_component: 3% of managed Amazon ad spend
+  includes:
+  - Everything in Copilot Pro
+  - Dedicated account manager
+  - Strategy and performance calls
+  - Monthly email updates
+  - Basic listing optimization guidance
+- name: Diamond
+  category: expert-managed
+  price: 1750
+  price_display: $1750 + 3% ad spend/per month
+  currency: USD
+  billing_period: month
+  usage_component: 3% of managed Amazon ad spend
+  includes:
+  - Everything in Gold
+  - Custom reporting
+  - Bi-weekly strategy calls
+  - Bi-weekly email updates
+  - In-depth listing optimization
+  - Advanced case log support
+  - Advanced SEO implementation
+- name: Enterprise
+  category: expert-managed
+  price: null
+  price_display: Custom
+  currency: USD
+  billing_period: null
+  includes:
+  - Everything in Diamond
+  - Annual competitive analysis reports
+  - Weekly strategy calls
+  - Weekly email updates
+  - Personalized consulting for listings
+  - Product launch collaboration
+  - Amazon price optimization
+  - Dedicated Slack channel
