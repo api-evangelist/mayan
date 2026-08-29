@@ -9,6 +9,17 @@ description: 'Mayan is a Las Vegas, Nevada growth-automation platform for Amazon
   Enterprise engagements. Mayan is an official Amazon Ads partner and consumes Amazon''s
   Selling Partner and Advertising APIs; as of this profile it publishes no public API,
   developer portal, or machine-readable contract of its own.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/63ea8205733cc93bcb2836e5/6407877bdecd95d7099abb69_mayan-256x256.png
 url: https://raw.githubusercontent.com/api-evangelist/mayan/refs/heads/main/apis.yml
 x-type: company
