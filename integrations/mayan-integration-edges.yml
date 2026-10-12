@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/mayan/integrations
+- https://n8n.io/integrations/mayan/
+- https://composio.dev/toolkits/mayan
+- https://monid.ai/tools/mayan
+checked:
+- https://composio.dev/toolkits/mayan
+- https://monid.ai/tools/mayan
+- https://n8n.io/integrations/mayan/
+- https://zapier.com/apps/mayan/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
