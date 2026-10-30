@@ -64,27 +64,99 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Mayan is a growth-automation platform for Amazon sellers, founded in 2020 in Las Vegas, Nevada
-(Y Combinator W21). It pairs Amazon advertising optimization with inventory intelligence —
-automated Sponsored Products campaign creation, keyword and category targeting, competitor product
-targeting, placement adjustments, search expansion, pricing optimization, profit dashboards and
-replenishment alerts — sold self-serve as Copilot Lite (free) and the Smart Ads Platform, and as
-expert-managed Gold, Diamond and Enterprise engagements. Mayan is an official Amazon Ads partner.
+Mayan is a Las Vegas, Nevada growth-automation platform for Amazon sellers, founded in 2020 and a Y Combinator W21 company. Its software pairs advertising optimization with inventory intelligence: automated Sponsored Products campaign creation, keyword and category targeting, competitor product targeting, placement adjustments, search expansion, pricing optimization, profit dashboards and replenishment alerts. It is sold self-serve as Copilot Lite (free) and the Smart Ads Platform, and as expert-managed Gold, Diamond and Enterprise engagements. Mayan is an official Amazon Ads partner and consumes Amazon's Selling Partner and Advertising APIs; as of this profile it publishes no public API, developer portal, or machine-readable contract of its own.
 
-- Website: https://www.mayan.co/
-- Application: https://app.mayan.co/signin
-- Pricing: https://www.mayan.co/pricing
-- Status: https://status.mayan.co/
-- GitHub: https://github.com/mayanco
+**Areas:** Company · Amazon · E-Commerce · Advertising · Retail Media · Marketing Automation · Inventory · Analytics · Software-as-a-Service
 
-## API surface
+## Mayan on APIs.io
 
-**Mayan publishes no public API.** As of 2026-08-26 there is no developer portal, API reference,
-OpenAPI/AsyncAPI/GraphQL contract, SDK, MCP server or agent card on any Mayan host. `api.mayan.co`,
-`docs.mayan.co`, `developer.mayan.co` and `developers.mayan.co` do not resolve in DNS, and every
-`/.well-known/*`, `/openapi.json`, `/swagger.json`, `/api-docs`, `/graphql` and `/llms.txt` probe on
-`www.mayan.co` and `app.mayan.co` returned 404. Mayan is an API *consumer*: it integrates Amazon's
-Selling Partner API and Amazon Advertising API on behalf of its customers.
+Everything profiled for Mayan is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/mayan/](https://apis.io/providers/mayan/)** — or go straight to one of the APIs or properties below.
 
-What this profile does record is the public operational and commercial surface — pricing tiers,
-status page and its Statuspage API, domain security posture, and the `/.well-known/` probe log.
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Mayan Domain Security](https://apis.io/security/mayan/mayan-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Mayan Plans Pricing](https://apis.io/plans/mayan/mayan-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Mayan Rate Limits](https://apis.io/rate-limits/mayan/mayan-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.mayan.co/)
+- [Pricing](https://www.mayan.co/pricing)
+- [Sign up](https://app.mayan.co/signup)
+- [Support](https://www.mayan.co/contact)
+- [Blog](https://www.mayan.co/blog-category/updates)
+- [Terms of service](https://www.mayan.co/tos)
+- [Privacy policy](https://www.mayan.co/privacy-policy)
+- [GitHub](https://github.com/mayanco)
+- [Status](https://status.mayan.co/)
+
+## API Evangelist rating
+
+**Kin Score 23.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 76.3 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/mayan/](https://apis.io/providers/mayan/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Mayan: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/mayan/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
